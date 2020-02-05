@@ -1,0 +1,10 @@
+.add-items {
+    margin-bottom: 1.5rem;
+    overflow: hidden
+}
+.search{
+    height: calc(1.5em + .75rem + -6px);
+}
+.search::placeholder{
+    text-align: center;
+}

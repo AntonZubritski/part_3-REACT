@@ -1,0 +1,11 @@
+.padding {
+  padding: 5rem
+}
+.card .card-body {
+  padding: 1.25rem 1.75rem
+}
+@media (max-width:780px) {
+  .container, .container-md, .container-sm {
+    min-width: 450px;
+  }
+}

@@ -1,0 +1,11 @@
+.add-items .btn {
+    margin-left: .5rem;
+    outline: none;
+}
+.btn {
+    font-size: 1.3rem;
+    line-height: 0;
+    font-weight: 400;
+    padding: .7rem 1.5rem;
+    border-radius: 0.1275rem;
+}
