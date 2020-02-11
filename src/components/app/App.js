@@ -15,7 +15,6 @@ class App extends React.Component {
                 {id:1, title: 'второй', favor: false, done: false},
                 {id:2, title: 'третий', favor: false, done: false}],
             filteredTodos : [],
-            search : [],
             tabs : [
                 {title: 'Все', active: true},
                 {title:'Избранное', active: false},

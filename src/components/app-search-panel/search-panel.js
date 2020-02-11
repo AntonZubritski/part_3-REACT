@@ -17,15 +17,11 @@ class AppSearch extends Component{
             <form className = "add-items d-flex" onChange = { e => {
                 e.preventDefault();
                 onSearch(label);
-
             }}>
-
                     <input type = "text" className = "form-control todo-list-input search"
                        onChange = {this.clickSubmit} placeholder = "ИСКАТЬ" value = {label} />
-
             </form>)
     }
-
 }
 
 export default AppSearch

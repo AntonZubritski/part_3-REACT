@@ -19,7 +19,6 @@ function AppToDoItem ({title, onDelete, onDone, onFavor, done, favor}){
                </div>
                <i className="fa fa-times remove" onClick={onDelete}/>
             </li>);
-
 }
 
 export default AppToDoItem
