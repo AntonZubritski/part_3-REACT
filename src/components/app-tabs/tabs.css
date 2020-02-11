@@ -1,0 +1,11 @@
+.completedTab{
+    padding: .7rem 1.5rem;
+    font-size: 1rem;
+    line-height: 0;
+    font-weight: 800;
+    color: white;
+    background-color: #007bff;
+    border-color: #007bff;
+    border-radius: 0.1275rem;
+    transition: 150ms linear all;
+}
