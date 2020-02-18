@@ -9,8 +9,7 @@ export default class PlanetDetails extends Component {
     this.state = {
       planet: {},
       loading: true,
-      error: null,
-      id: 2
+      error: null
     };
     this.swapiService = new SwapiService();
   }
@@ -25,7 +24,7 @@ export default class PlanetDetails extends Component {
   updatePlanet() {
     const { id } = this.props;
     this.swapiService
-      .getPlanet(id)
+      .getPlanet(100)
       .then(res => this.onPlanetLoaded(res))
       .catch(error => {
         this.setState({
@@ -44,7 +43,7 @@ export default class PlanetDetails extends Component {
 
   render() {
     const { planet, loading, error } = this.state;
-    const spinner = loading ? <Spinner /> : null;
+    const spinner = loading && !error ? <Spinner /> : null;
     const content = !loading ? (
       <PlanetDetailsView planet={planet} />
     ) : (
@@ -60,7 +59,18 @@ export default class PlanetDetails extends Component {
   }
 }
 const Error = ({ error }) => {
-  return <div className="person-details card">{error}</div>;
+  return (
+    <div className="person-details card">
+      <ul className="list-group list-group-flush">
+        <li className="list-group-item">
+          <h2 className="term">УуупсАринУпса</h2>
+        </li>
+        <li className="list-group-item">
+          <span>{error}</span>
+        </li>
+      </ul>
+    </div>
+  );
 };
 
 const PlanetDetailsView = ({ planet }) => {

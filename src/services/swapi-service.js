@@ -30,11 +30,6 @@ export default class SwapiService {
     return this._transformPlanet(planet);
   }
 
-  _extractId(item) {
-    const idRegExp = /\/([0-9]*)\/$/;
-    return item.url.match(idRegExp)[1];
-  }
-
   _transformPlanet(planet) {
     const idRegExp = /\/([0-9]*)\/$/;
     return {
@@ -47,8 +42,9 @@ export default class SwapiService {
   }
 
   _transformPerson(person) {
+    const idRegExp = /\/([0-9]*)\/$/;
     return {
-      id: this._extractId(person),
+      id: person.url.match(idRegExp)[1],
       name: person.name,
       gender: person.gender,
       birthYear: person.birthYear,
