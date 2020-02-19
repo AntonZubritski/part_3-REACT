@@ -1,0 +1,15 @@
+.item-list {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.item-list .list-group-item {
+  cursor: pointer;
+  background-color: rgba(71, 66, 66, 0.45);
+  border: 1px solid rgb(94, 94, 94);
+  color: rgb(247, 247, 247);
+}
+
+.item-list .list-group-item:hover {
+  background-color: #444;
+}
