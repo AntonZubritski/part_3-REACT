@@ -1,0 +1,13 @@
+.error-img {
+    background: url("https://www.pngkey.com/png/full/369-3696478_deviantart-net-star-wars.png") no-repeat;
+    background-size: cover;
+    flex-direction: column;
+    color: white;
+}
+.random-planet {
+    display: flex;
+    padding: 1rem;
+    background-color: rgba(71, 66, 66, 0.45);
+    border: 1px solid rgb(94, 94, 94);
+    margin-bottom: 1rem;
+}
