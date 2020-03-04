@@ -1,0 +1,32 @@
+h4 {
+  color: rgb(247, 247, 247);
+}
+.random-planet {
+  display: flex;
+  padding: 1rem;
+  background-color: rgba(71, 66, 66, 0.45);
+  border: 1px solid rgb(94, 94, 94);
+  margin-bottom: 1rem;
+}
+
+.random-planet .planet-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  margin-right: 1rem;
+}
+
+.random-planet .list-group {
+  margin: 1rem 0 0 1rem;
+}
+
+.random-planet .list-group-item {
+  padding: 0.25rem;
+  background-color: rgba(71, 66, 66, 0.05);
+  border-bottom: 1px solid rgb(94, 94, 94);
+  color: rgb(247, 247, 247);
+}
+
+.random-planet .list-group-item .term {
+  margin-right: 0.5rem;
+}
